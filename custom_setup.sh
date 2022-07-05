@@ -2,11 +2,11 @@
 
 set -e
 
-VERSION=97.4692.04
+VERSION=1.0
 
 RELEASE_VERSION=${VERSION}
 
-SDK_BIN_URL=https://github.com/webrtc-sdk/android/releases/download/${VERSION}/libwebrtc.aar
+SDK_BIN_URL=https://github.com/Mohamed-Risaldar/android_webrtc/releases/download/${VERSION}/libwebrtc.aar
 
 BUILD_DIR=build
 mkdir -p ${BUILD_DIR}
@@ -19,5 +19,5 @@ mvn install:install-file \
     -Dfile=libwebrtc.aar \
     -Dpackaging=aar \
     -Dversion=${RELEASE_VERSION} \
-    -DgroupId=com.github.webrtc-sdk \
-    -DartifactId=android
+    -DgroupId=com.github.Mohamed-Risaldar \
+    -DartifactId=android_webrtc
